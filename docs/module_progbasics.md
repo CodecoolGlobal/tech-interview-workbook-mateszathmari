@@ -14,13 +14,15 @@ The dictionary can contain Key/Value pairs which is very useful in many cases .
 ### Algorithms
 
 #### Fibonacci sequences. Write a method (or pseudo code), that generates the Fibonacci sequences.
+```Python
 def Fibonacci():
     Fibonacci_list = [1, 2]
     for i in range(20):
         next_element = Fibonacci_list[-1] + Fibonacci_list[-2]
         Fibonacci_list.append(next_element)
-
+```
 #### How do you find a max value in a list/array if you can’t use any built-in functions?
+```Python
 def find_max():
     max_list = [1, 21, 33, 4, 5, 6]
     max = 0
@@ -28,6 +30,7 @@ def find_max():
         if number > max:
             max = number
     return max
+```
 #### How do you find the average of values in a list/array if you can’t use any built-in functions?
 def find_average():
     average_list = [1, 21, 33, 4, 5, 6]
@@ -62,15 +65,19 @@ dict.update('key4':'value4') we can add new key value pairs to the dict
 #### What does it mean that an object is immutable in Python?
 You can't change the elements value after declaration.
 #### What is conditional expression in Python?
+```Python
 a, b = 3, 2
 is_a_bigger_than_b = True if a > b else False
+```
 #### What are different types of arguments in Python?
+```Python
 def funct(*args, **kvargs):
     print(args)
     print(kvargs)
 
 
 funct(1, 2, 5, 7, h='a', c='444')
+```
 
 we can use arguments as an input to the function if we know how many arguments will be used as input we can use:
 def funct(a,b):
