@@ -32,6 +32,7 @@ def find_max():
     return max
 ```
 #### How do you find the average of values in a list/array if you can’t use any built-in functions?
+```Python
 def find_average():
     average_list = [1, 21, 33, 4, 5, 6]
     sum = 0
@@ -40,6 +41,7 @@ def find_average():
         sum += number
         counter += 1
     return sum/counter.
+```
 #### What do we call an *in-place* sort?
 Sorting a variable, in-place. Meaning sorting temporary.
 #### Explain an algorithm which sorts a list!
@@ -58,10 +60,12 @@ def function_name(function_arguments):
 ```
 ### Programming languages - Python  
 #### How do you use a dictionary in Python?
+```Python
 dict = ['key1':'value1', 'key2':'value2', 'key3':'value3'] declaration
 dict[key1] we can see the key1`s pair value
 dict[key2]='other key'	we can add a new value to the keys
 dict.update('key4':'value4') we can add new key value pairs to the dict
+```
 #### What does it mean that an object is immutable in Python?
 You can't change the elements value after declaration.
 #### What is conditional expression in Python?
@@ -107,8 +111,9 @@ tuple
 #### What is slice operator in Python and how to use?
 Slice operator is used when you want only a slice of the list.
 like:
+```Python
 print(list[from(included):until(not included)])
-
+```
 #### What arithmetic operators (+,*,-,/) can be used on lists in Python? What do they do?
 
 #### What is the purpose of the in and not in membership operators in Python?
