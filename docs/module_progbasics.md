@@ -44,13 +44,15 @@ The bubble sort , it goes trough on all the elements of the list , checking the 
 ### Programming paradigms - procedural
 
 #### What is the call stack?
-Stack can be a list , the main function of the list is we can put element only to top of the list like list.append() and we can delete like LIFO last in first out list.remove()
+Stack can be a list , the main function of the list is we can put element only to top of the list like list.append() and we can delete like LIFO last in first out list.pop()
 #### What is “Stack overflow”?
 The stack has a limited space to store , if we want to put more element than the available place it will throw stack overflow error.
 #### What are the main parts of a function?
+```Python
 def function_name(function_arguments):
     body_of_the_function=[]
-    return body_of_the_function
+    return body_of_the_function4
+```
 ### Programming languages - Python  
 #### How do you use a dictionary in Python?
 dict = ['key1':'value1', 'key2':'value2', 'key3':'value3'] declaration
