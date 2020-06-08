@@ -43,15 +43,15 @@ def find_average():
     return sum/counter.
 ```
 #### What do we call an *in-place* sort?
-Sorting a variable, in-place. Meaning sorting temporary.
+Sorting a variable, in-place. Meaning changing the same variable.
 #### Explain an algorithm which sorts a list!
-The bubble sort , it goes trough on all the elements of the list , checking the elements relations next to each other, if the next element is lower, swap them. It goes until the full list will be sorted.
+The bubble sort, it goes through on all the elements of the list, checking the elements relations next to each other, if the next element is lower, swap them. It goes until the full list will be sorted. This is descending sorting.
 ### Programming paradigms - procedural
 
 #### What is the call stack?
-Stack can be a list , the main function of the list is we can put element only to top of the list like list.append() and we can delete like LIFO last in first out list.pop()
+Stack can be a list, the main function of the list is we can put element only to top of the list like list.append() and we can delete like LIFO last in first out list.pop()
 #### What is “Stack overflow”?
-The stack has a limited space to store , if we want to put more element than the available place it will throw stack overflow error.
+The stack has a limited space to store, if we want to put more element than the available place it will throw stack overflow error.
 #### What are the main parts of a function?
 ```Python
 def function_name(function_arguments):
@@ -67,7 +67,7 @@ dict[key2]='other key'	we can add a new value to the keys
 dict.update('key4':'value4') we can add new key value pairs to the dict
 ```
 #### What does it mean that an object is immutable in Python?
-You can't change the elements value after declaration.
+You can't change the elements value after declaration. Example: set, tuple.
 #### What is conditional expression in Python?
 ```Python
 a, b = 3, 2
@@ -94,13 +94,14 @@ def funct(**kvargs):
 #### What is variable shadowing? (context: variable scope)
 The variable shadowing means when you declared a variable in a function, that variable exist in the function only, if you want to use somewhere else, you have to declare again.
 #### What can happen if you try to delete/drop/add an item from a List, while you are iterating over it in Python?
-If you use for loop, if you delete an item from list , that will run less times, if you add an item to a list it will run forever.
+If you use for loop, if you delete an item from list, that will run less times, if you add an item to a list it will run forever (but error will sometimes occur before you could do that. NOT ALL THE TIMES).
 #### What is the "golden rule" of variable scoping in Python (context: LEGB)? What is the lifetime of variables?
 The variable only available at that region where it was created.
 If you declare inside a loop , you can use only in that function.
 #### If you need to access the iterator variable after a for loop, how would you do it in Python?
 You can assign it to a new variable in the loop.
 #### What type of elements can a list contain in Python?
+Each item in a python list can be of any data type. Example:
 Boolean,
 string
 float
@@ -115,14 +116,50 @@ like:
 print(list[from(included):until(not included)])
 ```
 #### What arithmetic operators (+,*,-,/) can be used on lists in Python? What do they do?
+```Python
+NumList1 = [10, 20, 30]
+NumList2 = [5, 2, 3]
+add = []
+sub = []
+multi = []
+div = []
+mod = []
+expo = []
 
+for j in range(3):
+    add.append( NumList1[j] + NumList2[j])
+    sub.append( NumList1[j] - NumList2[j])
+    multi.append( NumList1[j] * NumList2[j])
+    div.append( NumList1[j] / NumList2[j])
+    mod.append( NumList1[j] % NumList2[j])
+    expo.append( NumList1[j] ** NumList2[j])
+
+print("\nThe List Items after Addition =  ", add)
+print("The List Items after Subtraction =  ", sub)
+print("The List Items after Multiplication =  ", multi)
+print("The List Items after Division =  ", div)
+print("The List Items after Modulus =  ", mod)
+print("The List Items after Exponent =  ", expo)
+
+output:
+The List Items after Addition =   [15, 22, 33]
+The List Items after Subtraction =   [5, 18, 27]
+The List Items after Multiplication =   [50, 40, 90]
+The List Items after Division =   [2.0, 10.0, 10.0]
+The List Items after Modulus =   [0, 0, 0]
+The List Items after Exponent =   [100000, 400, 27000]
+```
 #### What is the purpose of the in and not in membership operators in Python?
-Check if an element is in or not in the list , if the element is in the list it returns True , else returns False
+Check if an element is in or not in the list, if the element is in the list it returns True, else returns False
 #### What does the + operator mean when used with strings in Python?
 It will concatenate the two strings.
 #### Explain f strings in Python?
 f strings is a good way to build up strings.
 f{stringVariable1}add something{stringVariable2}add something{stringVariable3}
+```Python
+answer = 456
+f"Your answer is "{answer}""
+```
 #### Name 4 iterable types in Python!
 list
 string
@@ -132,15 +169,31 @@ tuple
 the list can contain duplication's and single elements. list[1,1,5,6]
 a set can contain single elements an unordered way. set{9,2,6,5}
 The dict can contain key-value pairs dict{1:'something',2:'apple'}
+list comprehension: elegant way of defining and creating a list.
+```python
+  values = [ expression
+             for value in collection
+             <if condition> ]
+```
+
+```python
+  a_dict = {key: value  for key, value in zip(list1, list2) if clause}
+```
+generator expression: similar to list comprehensions, but instead of creating a list, but instead the creation is with loops.
+```Python
+genexpr = ('Hello' for i in range(3))
+```
+List comprehension returns a list []
+Generator expression returns an object that can be iterated through ()
 #### Does the order of the function definitions matter in Python? Why?
-It's doesn't matter just help you understand if you ordering.
+It's doesn't matter just help you understand if you're ordering.
 #### What does unpacking mean in Python?
 Unpacking means you can declare many variables in one line:
 a, b, c = 1, 2, 3
 or you can use a return value of a function and assign to a variables:
 a, b = my_funct()
 #### What happens when you try to assign the result of a function which has no return statement to a variable in Python?
-The value of the element will be 'None'
+The value of the element will be 'None'.
 ## Software engineering
 
 ### Debugging
@@ -154,13 +207,13 @@ step over : if you push that button it goes step by step but doesn't go into the
 step into : if you push, you can deeply go step by step, it going into the function as well.
 step out: if you are in one function that button will exit from that function.
 #### How can you start to debug a program from a certain line using the debugger?
-You can mark lines with a red dot where you want to stop the program and after on a left side click on the debugger, after choose 'debug a currently open file'.
+You can mark lines with a red dot where you want to stop the program and after on a left side click on the debugger, after choose 'debug a currently open file'. Run to cursor(Shift + F5)
 ### Version control
 
 #### What are the advantages of using a version control system?
-It makes the collaboration easier , you will have backup after every commit.
+It makes the collaboration easier, you will have backup after every commit.
 #### What is the difference between the working directory, the staging area and the repository in git?
-working directory where you working on your computer , staging area where your commits will be placed before pushing up to the repository.
+working directory where you working on your computer, staging area where your commits will be placed before pushing up to the repository.
 #### What are remote repositories in git?
 The remote repository is an online storage of the codes where you can work together with your colleagues by push and pull the modifications.
 #### Why does a merge conflict occur?
@@ -170,18 +223,17 @@ git add 'file name'
 git commit -m 'meaningful commit'
 git push
 #### What does it mean atomic commits and descriptive commit messages?
-Atomic commit means when you explain more than one change in one commit messages.
-describe commit means you clearly explain in the commit what happened.
+Atomic commit means when you explain a small fix, or feature.
+Describe commit means you clearly explain in the commit what happened.
 #### What’s the difference between git and GitHub?
 Git is a version control system.
 the GitHub is one of the version control systems
-
 ## Software design
 
 ### Clean code
 
 #### What does clean code mean?
-No duplication's.
+No duplications.
 No dead codes.
 Meaningful variable names.
 no magic numbers
@@ -197,15 +249,17 @@ When that error occurs, you can create exception to handle it, to avoid your pro
 #### What are the basics of exception handling in Python?
 using the try-except block
 #### In which case should we catch an exception? Why?
-when we want to read a file by filename what was given by the customer, and handle if that file names doesn't exist.
+When you think that you have a code which can produce an error then
+you can use exception handling.
+Example : When we want to read a file by filename what was given by the customer, and handle if that file names doesn't exist.
 #### What can/should we do with an exception in the ‘except’ block?
-print an understandable error message 
+Print an understandable error message. Also quit the program, if needed.
 #### What does the else and finally statement do in a try-except block in Python?
-If none of the conditions are True it will execute the else block and it docent matter which condition was true before , the program in the finally block will execute always.
+If none of the conditions are True it will execute the else block and it docent matter which condition was true before, the program in the finally block will execute always.
 ## Software Development Methodologies
 
 #### What is the main goal of a retrospective meeting?
-To summarize the week , what was bad , what was good, how can we improve from it.
+To summarize the week, what was bad, what was good, how can we improve from it.
 
 ## Programming environment
 
@@ -214,31 +268,33 @@ To summarize the week , what was bad , what was good, how can we improve from it
 #### What is UNIX and what is Linux?
 both is an operating system the Linux rather on PCs UNIX on servers, the Linux is based on UNIX.
 #### What do we call the shell in Linux?
-It is a program that takes commands from the keyboard and gives them to the operating system to perform
+It is a program that takes commands from the keyboard and gives them to the operating system to perform.
 #### What does root means in a Linux environment?
-Administrator environment . You have access to all the commands and files.
+Administrator environment. You have access to all the commands and files.
 #### How do you access your personal files in Linux?
-You need to be superuser in terminal and cd command or you can use file manager.
+In terminal type cd home/\<username>.
 #### How can you install an application in Linux?
-You can use the software center , or in terminal sudo 'filename' install command.
+You can use the software center, or in terminal sudo 'filename' install command.
 #### What is package management in Linux, what are repositories?
-package managers are collections of software tools that automates the process of installing
+Package managers are collections of software tools that automates the process of installing.
 #### How do you navigate in the filesystem with the command line?
-cd 'folder name' to step in to folder
-ls to have a list of files in current folder
+cd 'folder name' to step in to folder.
+ls to have a list of files in current folder.
 cd .. step back to the previous folder.
 #### What does the following commands do: mkdir, rm, cat, cp, touch?
-mkdir -make a folder 
-rm -delete
+mkdir -make a folder
+rm -delete, rm -rf -deletes folders aswell
 cat - list the text inside the file
 cd - copy
 touch - make a new file
 #### How can you look up what does a command do in Linux if you have no internet connection?
---help
+man \<commandname>
+\<commandname> -help
 #### What does the following commands do: head, tail, more, less?
-- more : to view a text file one page at a time, press space bar to go to the next page
-- tail : display the last part of the file
+- more : to view a text file one page at a time, press space bar to go to the next page.
+- tail : display the last part of the file.
 - head : displays the first ten lines of a file, unless otherwise stated.
-- less : read contents of text file one page(one screen) per time. It has faster access because if file is large, it don’t access complete file, but access it page by page. it is similar to "more" command
+- less : read contents of text file one page(one screen) per time. It has faster access because if file is large, it don’t access complete file, but access it page by page. it is similar to "more" command.
 #### How do you download a file from internet using the terminal?
-Using wget "http>//something.com/file.txt"
+Using wget:
+wget "http>//something.com/file.txt"
