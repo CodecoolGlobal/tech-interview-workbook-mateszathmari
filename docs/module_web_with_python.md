@@ -286,18 +286,58 @@ Different dependencies can safely separated for every project. For example one p
 ### Networks
 
 #### What kind of HTTP status codes do you know?
+    • 100–199 - Informational responses
+    • 200–299 - Successful responses
+    • 300–399 - Redirects
+    • 400–499 - Client errors
+    • 500–599 - Server errors
 #### What is a API?
+Application Programming Interface.
+    • An API is code, that allows two software programs to communicate with each other. One program can call another programs API to get access to data or functionality of the other program.
 #### What is REST API?
+A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.
 #### What is JSON? When to use?
+JavaScript Object Notation. JSON format is used for serializing and transmitting structured data over network connection. It is primarily used to transmit data between a server and web applications.
 #### What is TCP/IP? What layers does it define, what are they responsible for?
+TCP/IP - Transmission Control Protocol/Internet Protocol
+is the language a computer uses to access the internet. It consists of a suite of protocols designed to establish a network of networks to provide a host with access to the internet. (its like a set of rules to allow communicate each other)
+TCP defines how applications can create channels of communication across a network. It also manages how a message is assembled into smaller packets before they are then transmitted over the internet and reassembled in the right order at the destination address.
+IP defines how to address and route each packet to make sure it reaches the right destination. Each gateway computer on the network checks this IP address to determine where to forward the message.
 #### What’s the difference between TCP and UDP?
+Both TCP and UDP are protocols used for sending bits of data—known as packets—over the Internet. Both protocols build on top of the IP protocol. In other words, whether you’re sending a packet via TCP or UDP, that packet is sent to an IP address. These packets are treated similarly, as they’re forwarded from your computer to intermediary routers and on to the destination.
+TCP Transmission Control Protocol (TCP) is a connection-oriented protocol that computers use to communicate over the internet. It is one of the main protocols in TCP/IP networks. TCP provides error-checking and guarantees delivery of data and that packets will be delivered in the order they were sent.
+UDP  User Datagram Protocol (UDP) is a connectionless protocol that works just like TCP but assumes that error-checking and recovery services are not required. Instead, UDP continuously sends datagrams to the recipient whether they receive them or not.
+
+TCP
+Reliable
+Connection-oriented
+Segment retransmission and flow control through windowing
+Segment sequencing
+Acknowledge sequencing
+
+UDP
+Unreliable
+Connectionless
+No windowing or retransmission
+No sequencing
+No acknowledgment
+
 #### How does an HTTP Request look like? What are the most relevant HTTP header fields?
+Request headers contain more information about the resource to be fetched, or about the client requesting the resource. Method name, target address, user agent, encodings and connection types, cookie information.
 #### How does an HTTP Response look like? What are the most relevant HTTP header fields?
+Response headers hold additional information about the response. status of the response, location where it came from, its content length or MIME type.
 #### What is DNS? How does it work?
+DNS - Domain Name Servers They maintain a directory of domain names and translate them to Internet Protocol (IP) addresses.
 #### What is a web server?
+A Web server is a program that uses HTTP (Hypertext Transfer Protocol) to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients. Dedicated computers and appliances may be referred to as Web servers as well.
 #### Explain the client-server architecture.
+Each computer or process on the network is either a client or a server.
+Clients are the users whom consuming the
+Servers provided, hosted, managed network.
 #### What would you use a session for?
+For conserving a temporary state about the connection and about the user. They expire after the browser closed.
 #### What would you use a cookie for?
+For saving locally data about the user or from the connection types or settings.
 
 ## Software Development Methodologies
 
