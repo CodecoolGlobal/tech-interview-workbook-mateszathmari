@@ -239,11 +239,25 @@ XML is abbreviation for eXtensible Markup Language whereas HTML stands for Hyper
 ### Javascript
 
 #### What is javascript?
+JS is a scripting language designed to control web page content.
 #### When to use AJAX? Bring examples of its usage.
+AJAX programming is that you can exchange data in the background without actually disturbing the user experience.
+- Comments: (when a commenter hits the comment button, it's nice to see the comment appear immediately on the page.)
 #### What is DOM and how to manipulate it from Javascript?
+DOM - Document Object Model DOM is representative displaying for the according html document, and those objects can modified.
+    • Creating, removing or replacing an element
+    • Modifying an element's text and/or HTML content
+    • Get an element content and work with it
+      let element = document.querySelector('selector');
+      elemen.syle.backgroundColor = ‘black’;
 #### What are events and how/why to use them in Javascript?
+JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. With event listeners to catch them and with event handlers to react for them. Using for make a site interactive, informative or any other UX, UI purpose.
 #### What is event bubbling/capturing? How would you use it?
+Event bubbling and capturing are two ways of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event.
+Capturing  Start with outer elements and continue with inner elements.
+Bubbling is opposite, the inner elements first and after outers.
 #### What is JSON and how do we use it?
+JSON format is used for serializing and transmitting structured data over a network connection. Primarily to transmit data between a server and web application.
 
 ## Software engineering
 
