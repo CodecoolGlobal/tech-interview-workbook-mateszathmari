@@ -77,15 +77,26 @@ Similar to the average counting of an array. We have to move along each nodes an
 
 ### Procedural
 #### How the CASE condition works in SQL?
+CASE is a program-flow controlling structure, it checks the cases ,when the condition is true it goes into and execute it and never checks the cases after, if none of the cases are true , it executes what is in the else clause.
 #### How the switch-case condition works in JavaScript?
+Switch CASE is a program-flow controlling structure, it checks the cases ,when the condition is true it goes into and execute it and never checks the cases after, if none of the cases are true , it executes what is in the else clause.
 #### How to achieve a switch-case-like structure in Python?
+With if – elif statements.
 #### Explain variable scoping in Python!
+According to the LEGB rule: local, enclosing, global, built-in, the look-up for the namespaces are started from the most inner scope: which is the local. E.g.: in the body of a function.
 #### What’s the difference between const and var in JavaScript?
+var is a variable, the value can be modified after all. const is a constant, the value is immutable, can't be reassigned after declaration.
 #### How the list comprehension looks like in Python?
+List = [a+1 for a in range(5)]
 #### How the “ternary expression” looks like in Python?
+a = 1 if b == 2 else 2
 #### How the ternary expression looks like in JavaScript?
+condition ? exprIfTrue : exprIfFalse
 #### How to import a function from another module in Python?
+from module import module_name 
+calling: module_name.function_name
 #### How to import a function from another module in JavaScript?
+import name from "module-name";
 
 ### Functional
 #### What is recursion?
