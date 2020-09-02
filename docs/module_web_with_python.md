@@ -5,7 +5,16 @@
 ### Clean code
 
 #### Point out 5 suggestions, how to format an SQL query!
+       	1: Indent Your Code
+       	2: Use the WITH Clause instead HAVING
+	3: Explain Yourself with Comments
+	4: Break Queries into Steps
+      	5: Stick with One Naming Convention
 #### What layers can you name in a simple web application?
+	View
+	Application service
+	Database
+	Domain
 
 ### Error handling
 #### What error can occur, when an array does not have an element on the requested index?
