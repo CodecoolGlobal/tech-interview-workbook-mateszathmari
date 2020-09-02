@@ -18,8 +18,11 @@
 
 ### Error handling
 #### What error can occur, when an array does not have an element on the requested index?
+	Index error.
 #### What is the “finally” block, and how would you use it?
+	The finally block is as the name , some code that you want to 		execute regardless of what happens.
 #### Why should we catch special exception types?
+Exception handling ensures that the flow of the program doesn't break when an exception occurs. For example, if a program has bunch of statements and an exception occurs mid way after executing certain statements then the statements after the exception will not execute and the program will terminate abruptly.
 
 ### Security
 #### What is SQL injection? How to protect an application against it?
