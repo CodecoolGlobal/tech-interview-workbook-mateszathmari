@@ -342,8 +342,24 @@ For saving locally data about the user or from the connection types or settings.
 ## Software Development Methodologies
 
 #### What kind of software development methodologies do you know? What are the main features of these?
+    • Waterfall - Very simple and easy to understand or to manage. Rigid. Each phase has a review process. requierements -> Desing -> Implementation -> Verification -> Maintanance 
+    • Agile - Adaptive approach which is able to respond to the changing requirements of the clients. Direct communication and feedback from customer. Using 1-3 weeks sprints.
+    • Scrum - Decision-making is entirely in the hands of the teams, lightly controlled method, frequent updating of the progress, project development steps is visible. A daily meeting easily helps the developer to make it possible to measure individual productivity. This leads to the improvement in the productivity of each of the team members
 #### What are the SCRUM roles?
+    • Product owner
+    • Scrum master
+    • Development team
 #### What are the SCRUM ceremonies?
+    • Sprint planning meeting
+    • Daily Scrum
+    • Sprint review meeting
+    • Sprint retrospective meeting
 #### What are the SCRUM artifacts?
+    • Product increment
+    • Product backlog
+    • Sprint backlog
 #### What is the main goal of a retrospective meeting?
+To get better understanding about how the work went during the last sprint, and through this find better ways to meet the project's goals.
 #### Explain, when would you recommend to use the waterfall methodology?
+    • Requirements are very well known, clear and fixed.
+    • Product definition is stable.
