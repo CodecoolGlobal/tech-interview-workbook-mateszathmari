@@ -60,11 +60,20 @@ Fist I would encrypt ,and after on a secured server.
 ### Algorithms
 
 #### What is the difference between Stack and Queue data structure?
+Stack data structure have just one pointer, adding operation (push) or removing operation (pop) take place from the top of the list, 
+for example: LIFO (Last In First Out)
+Queue have two pointers. One for each side of the list. The front side can take a new operation (enqueue),
+to remove (dequeue) an operation the pointer should use the the rear side. Principle: FIFO (First In First Out)
 #### What is BubbleSort? Describe the main logic of this sorting algorithm.
+BubbleSort is a sorting method. Starting from the first element, comparing it with the next. If the next element higher then the previous move to the next. Else swap them. And so on till the last index.
 #### Explain the process of finding the maximum and minimum value in a list of numbers!
+Iterate trough the list of numbers. Set the first as highest/lowest. Then comparing each next element with the firsts and replace it with the first accordingly.
 #### Explain the process of calculating the average value in an array of numbers!
+Adding each element value together and dividing it with the the total element count.
 #### What is Big O complexity? Explain time and space complexity!
+Big O Notation is to describe the complexity of an algorithm. How long an algorithm takes to run. It is to compare the efficiency of different approaches to a problem. Big O express the run time as it grows relative to the input, as the input gets larger.
 #### Explain the process of calculating the average value in a list of numbers!
+Similar to the average counting of an array. We have to move along each nodes and adding together the values, than dividing them with the total nodes count.
 
 ### Procedural
 #### How the CASE condition works in SQL?
