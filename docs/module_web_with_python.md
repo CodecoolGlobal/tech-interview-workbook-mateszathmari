@@ -26,15 +26,34 @@ Exception handling ensures that the flow of the program doesn't break when an 
 
 ### Security
 #### What is SQL injection? How to protect an application against it?
+SQL Injection (SQLi) is a type of an injection attack that makes it possible to execute malicious SQL statements. Prevent SQL Injection attacks with input validation and parametrized queries with prepared statements: do not use the input directly. Also sanitizing all input e.g.: remove potential malicious code elements such as single quotes and other special characters.
 #### What is XSS? How to protect an application against it?
+Cross-site script injection. Most of all:
+      Filter input on arrival. At the point where user input is received, filter as strictly as possible based on what is expected or valid input.
+    • Encode data on output. At the point where user-controllable data is output in HTTP responses, encode the output to prevent it from being interpreted as active content. Depending on the output context, this might require applying combinations of HTML, URL, JavaScript, and CSS encoding.
+    • Use appropriate response headers. To prevent XSS in HTTP responses that aren't intended to contain any HTML or JavaScript, you can use the Content-Type and X-Content-Type-Options headers to ensure that browsers interpret the responses in the way you intend.
+    • Content Security Policy. As a last line of defense, you can use Content Security Policy (CSP) to reduce the severity of any XSS vulnerabilities that still occur.
 #### How to properly store passwords?
+In at least hashed form. Or hashed and salted.
 #### What is HTTPS?
+Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet It protects against man-in-the-middle attacks.
 #### What is encryption and decryption?
+Encrypting hide something. Decryption is revealing the secret content.
 #### What is hashing?
+A hash function is where a computer takes an input of any length and content (e.g. letters, numbers, and symbols) and uses a mathematical formula to chop it, mix it up, and produce an output of a specific length.
 #### What is the difference between encryption and hashing? When would you use which?
+Encrypting is done by a key, reversible; with the same key it can be decrypted. Length hang from the source length. Used in cases when the content is also important and needed, possible to transfer it in a secure way.
+Hashing is irreversible, one way transformation. It’s ideal for passwords.
 #### What encryption methods do you know?
+Symmetric and asymmetric.
+AES Advanced Encryption Standard is a symmetric encryption algorithm that encrypts fixed blocks of data (of 128 bits) at a time. The keys used to decipher the text can be 128-, 192-, or 256-bit long.
+RSA is considered an asymmetric algorithm due to its use of a pair of keys.
+You’ve got your public key,which is what we use to encrypt our message,
+ and a private key to decrypt it
 #### What hashing methods do you know?
+MD5 , SHA-2
 #### How/where would you store sensitive data (like db password, API key, ...) of your application?
+Fist I would encrypt ,and after on a secured server.
 
 ## Computer science
 
