@@ -279,7 +279,9 @@ Remote exists on the git server. Local files are the copy of them on my disk.
 ### DevOps
 
 #### Why is it good to use a package manager software?
+Easy, safe and clean install packages, modules, extensions.
 #### Why is it good to use a virtual environment for a project?
+Different dependencies can safely separated for every project. For example one project is hanging around from a while, there is already an update for one of the module which is used by. With venv the module can be available in both versions without any problem.
 
 ### Networks
 
