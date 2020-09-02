@@ -203,7 +203,7 @@ XHTML is XML based, composing the two other attributes. Parsed as an HTML docume
 #### How to include a JavaScript file in a webpage?
 <script type="javascript" src="javascript.js"></script>
 #### How to include a CSS file in a webpage?
-<link rel="stylesheet" type="css" href="stylesheet.css"/>
+link rel="stylesheet" type="css" href="stylesheet.css"/>
 #### How to select an element using its id in CSS?
 With selectors. Selectors can be tag_name {}, .class_name {} and #id_name {}.
 #### How to select elements using their class in CSS?
