@@ -5,22 +5,22 @@
 ### Clean code
 
 #### Point out 5 suggestions, how to format an SQL query!
-       	1: Indent Your Code
-       	2: Use the WITH Clause instead HAVING
-	3: Explain Yourself with Comments
-	4: Break Queries into Steps
-      	5: Stick with One Naming Convention
+1: Indent Your Code
+2: Use the WITH Clause instead HAVING
+3: Explain Yourself with Comments
+4: Break Queries into Steps
+5: Stick with One Naming Convention
 #### What layers can you name in a simple web application?
-	View
-	Application service
-	Database
-	Domain
+View
+Application service
+Database
+Domain
 
 ### Error handling
 #### What error can occur, when an array does not have an element on the requested index?
-	Index error.
+Index error.
 #### What is the “finally” block, and how would you use it?
-	The finally block is as the name , some code that you want to 		execute regardless of what happens.
+The finally block is as the name , some code that you want to execute regardless of what happens.
 #### Why should we catch special exception types?
 Exception handling ensures that the flow of the program doesn't break when an exception occurs. For example, if a program has bunch of statements and an exception occurs mid way after executing certain statements then the statements after the exception will not execute and the program will terminate abruptly.
 
@@ -217,24 +217,24 @@ With chaining the class selectors: .alpha.beta {}
 #### What are UX and UI?
 User Experience and User Interface.
 #### Please list some points that an application should fulfill to have good UX.
-    • Fulfill the users' needs
-    • Have a clear stucture
-    • Consistency
-    • Understandable
-    • Usability
+• Fulfill the users' needs
+• Have a clear stucture
+• Consistency
+• Understandable
+• Usability
 #### What is XML, XSLT, DTD?
-    • XML is a markup language, to create XML document in the proper way
-    • XSLT - Extensible Stylesheet Language Transformations is the XML stylesheet formatting language
-    • DTD -- Document Type Definition is for validating the XML document
+• XML is a markup language, to create XML document in the proper way
+• XSLT - Extensible Stylesheet Language Transformations is the XML stylesheet formatting language
+• DTD -- Document Type Definition is for validating the XML document
 #### What is the difference between HTML and XML?
 XML is abbreviation for eXtensible Markup Language whereas HTML stands for Hypertext Markup Language.
-    • XML mainly focuses on transfer of data while HTML is focused on presentation of the data.
-    • XML is content driven‭‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬ whereas HTML is format driven‭‬‬‬‬‬‬‬.
-    • XML is Case sensitive while HTML is Case insensitive.
-    • XML provides namespaces support while HTML doesn't provide namespaces support.
-    • XML is strict for closing tag while HTML is not strict.
-    • XML tags are extensible whereas HTML has limited tags.
-    • XML tags are not predefined whereas HTML has predefined tags.
+• XML mainly focuses on transfer of data while HTML is focused on presentation of the data.
+• XML is content driven‭‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬ whereas HTML is format driven‭‬‬‬‬‬‬‬.
+• XML is Case sensitive while HTML is Case insensitive.
+• XML provides namespaces support while HTML doesn't provide namespaces support.
+• XML is strict for closing tag while HTML is not strict.
+• XML tags are extensible whereas HTML has limited tags.
+• XML tags are not predefined whereas HTML has predefined tags.
 
 ### Javascript
 
@@ -286,11 +286,11 @@ Different dependencies can safely separated for every project. For example one p
 ### Networks
 
 #### What kind of HTTP status codes do you know?
-    • 100–199 - Informational responses
-    • 200–299 - Successful responses
-    • 300–399 - Redirects
-    • 400–499 - Client errors
-    • 500–599 - Server errors
+• 100–199 - Informational responses
+• 200–299 - Successful responses
+• 300–399 - Redirects
+• 400–499 - Client errors
+• 500–599 - Server errors
 #### What is a API?
 Application Programming Interface.
     • An API is code, that allows two software programs to communicate with each other. One program can call another programs API to get access to data or functionality of the other program.
@@ -348,20 +348,20 @@ For saving locally data about the user or from the connection types or settings.
  A daily meeting easily helps the developer to make it possible to measure individual productivity.
  This leads to the improvement in the productivity of each of the team members
 #### What are the SCRUM roles?
-    • Product owner
-    • Scrum master
-    • Development team
+• Product owner
+• Scrum master
+• Development team
 #### What are the SCRUM ceremonies?
-    • Sprint planning meeting
-    • Daily Scrum
-    • Sprint review meeting
-    • Sprint retrospective meeting
+• Sprint planning meeting
+• Daily Scrum
+• Sprint review meeting
+• Sprint retrospective meeting
 #### What are the SCRUM artifacts?
-    • Product increment
-    • Product backlog
-    • Sprint backlog
+• Product increment
+• Product backlog
+• Sprint backlog
 #### What is the main goal of a retrospective meeting?
 To get better understanding about how the work went during the last sprint, and through this find better ways to meet the project's goals.
 #### Explain, when would you recommend to use the waterfall methodology?
-    • Requirements are very well known, clear and fixed.
-    • Product definition is stable.
+• Requirements are very well known, clear and fixed.
+• Product definition is stable.
