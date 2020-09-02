@@ -264,11 +264,17 @@ JSON format is used for serializing and transmitting structured data over a netw
 ### Version control
 
 #### What type of branching strategy would you use?
+Opening a new branch for every development station(tasks). When it's done then merge back to master so avoid conflicts or losing a good state the code.
 #### What would you do if you find a bug on the production code (master branch)?
+I would open a new branch (like HOTFIX): fix the bug, after testing merging it back to master.
 #### How can you move changes from one branch to another in GIT?
+Make and checkout to a new branch will copy the actual state of the original branch .
 #### How does a VCS help with code reviews?
+With the pull request, as inviting the other members to review the developed branch.
 #### What is your favorite git command? Why?
-#### What does remote/local mean in Git? 
+git clone  It’s a new exciting beginning.
+#### What does remote/local mean in Git?
+Remote exists on the git server. Local files are the copy of them on my disk. 
 
 ### DevOps
 
