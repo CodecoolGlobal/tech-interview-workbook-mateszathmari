@@ -100,14 +100,56 @@ import name from "module-name";
 
 ### Functional
 #### What is recursion?
+Recursive in functions mean: that the function call itself again .
 #### Write a recursive function which calculates the Fibonacci numbers!
+function fibo(limit, firstNumber, secondNumber) {
+        if (limit === 0) {
+            break;
+        } else {
+		limit -= 1;
+		let nextFiboNum = firstNumber + secondNumber;
+	    	console.log(nextFiboNum);
+	   	firstNumber = secondNumber;
+	    	secondNumber = nextFiboNum;
+		fibo(limit, firstNumber, secondNumber) 
+	    }
+    }
 #### How to store a function in a variable in Python?
+def my_function():
+    print("this is the function")
+
+function_variable = my_function
+
+print(function_variable)
 #### List the ways of defining a callable logical unit in JavaScript!
+      let obj = {
+              myMethod(arg1, arg2) {
+                  ...
+              }
+          };
 #### What is an event listener? How to attach one?
+Event listeners give functionality to the application. Trough them can be triggered a function by the user. Locating the target, attaching a listener function and in the callback handling the event with an event handler function.
+    • Locating:
+        ◦ object: window or document
+        ◦ methods: getElementById ,getElementsBy[TagName, .ClassName],
+querySelector, querySelectorAll
+    • Attaching:
+        ◦ method: addEventListener
+        ◦ event listener: a string named event listener type
+        ◦ event handler: a callable function
+	example:
+document.querySelector(".Btn").addEventListener("click", displayDate);
 #### How to trigger an event in JavaScript?
+Event listeners have a target, which they listen for. It can be triggered by:
+    • mouse actions
+    • keyboard actions
 #### What is a callback function? Tell some examples of its usage.
+A function if passed as argument to a function, is a callback function. The invoking function become a higher-order function, and will control the execution of called back function
+E.g.: a script can modify the content after a fetch script executed and returned the values.
 #### What is a Python decorator? How does it work? Tell some examples of its usage.
+Decorator is function, executed before the invoked function and the return value bounded with the decorated function return value.
 #### What is the difference between synchronous and asynchronous execution?
+sync: being executed after the page has loaded and the script also be loaded. async: load of the page and the script started parallel, script executed right after calling.
 
 ## Programming languages
 
