@@ -342,9 +342,11 @@ For saving locally data about the user or from the connection types or settings.
 ## Software Development Methodologies
 
 #### What kind of software development methodologies do you know? What are the main features of these?
-    • Waterfall - Very simple and easy to understand or to manage. Rigid. Each phase has a review process. requierements -> Desing -> Implementation -> Verification -> Maintanance 
-    • Agile - Adaptive approach which is able to respond to the changing requirements of the clients. Direct communication and feedback from customer. Using 1-3 weeks sprints.
-    • Scrum - Decision-making is entirely in the hands of the teams, lightly controlled method, frequent updating of the progress, project development steps is visible. A daily meeting easily helps the developer to make it possible to measure individual productivity. This leads to the improvement in the productivity of each of the team members
+• Waterfall - Very simple and easy to understand or to manage. Rigid. Each phase has a review process. requierements -> Desing -> Implementation -> Verification -> Maintanance 
+• Agile - Adaptive approach which is able to respond to the changing requirements of the clients. Direct communication and feedback from customer. Using 1-3 weeks sprints.
+• Scrum - Decision-making is entirely in the hands of the teams, lightly controlled method, frequent updating of the progress, project development steps is visible.
+ A daily meeting easily helps the developer to make it possible to measure individual productivity.
+ This leads to the improvement in the productivity of each of the team members
 #### What are the SCRUM roles?
     • Product owner
     • Scrum master
