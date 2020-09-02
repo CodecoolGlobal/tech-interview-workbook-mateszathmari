@@ -156,16 +156,42 @@ sync: being executed after the page has loaded and the script also be loaded. as
 ### SQL
 
 #### How can you connect your application to a database server? What are the possible ways?
+I need a connection string and a connection object from the database provider to set a session with the database server. For phyton we can use the psycopg2 module api's to connect an application with psql database.
 #### When do you use the DISTINCT keyword in SQL?
+DISTINCT is used in the SELECT statement to remove duplicate rows from a result .
 #### What are aggregate functions in SQL? Give 3 examples.
+An aggregate function performs a calculation on a set of values, and returns a single value.
+    • MAX()
+    • SUM()
+    • AVG()
+    • COUNT()
+    • MIN()
 #### What kind of JOIN types do you know in SQL? Could you give examples?
+    • (INNER) JOIN:
+        ◦ return the corresponding values if each table have the connection point.
+    • LEFT (OUTER) JOIN / RIGHT (OUTER) JOIN:
+        ◦ return the corresponding values if one of tables (corresponding) have the connection point.
 #### What are the constraints in sql?
+Constraints are defining what value type can accepted by the column.
+Like : NOT NULL, UNIQUE, PRIMARY KEY.
 #### What is a cursor in SQL? Why would you use one?
+A cursor is a temporary work area created in the system memory when a SQL statement is executed. A cursor contains information on a select statement and the rows of data accessed by it. This temporary work area is used to store the data retrieved from the database, and manipulate this data. 
 #### What are database indexes? When to use?
+To faster reach of a database table values, we can create an index. The index containing a field value and point to the row which hold the column. Index is sorted and acting like a placeholder to a faster search: no need the look up all the columns in the rows for the data.
 #### What are database transactions? When to use?
+A transaction is a single unit of logic or work.  Database transactions should be done for all or nothing. Using transactions ensures that the database engine can roll back the transaction.
 #### What kind of database relations do you know? How to define them?
+Table connection defined by keys, which are representing the connection between the tables.
+    1. one-to-one
+        ◦ if one table primary key referenced as the other table foreign key.
+    2. one-to-many
+        ◦ if one table primary key referenced as more than one other table foreign key.
+    3. many-to-many
+        ◦ if more than one table key pointing to more than one table keys. For that is needed an intersection table who is controlling the connection between the relations.
 #### You have a table with an “address” field which contains data like “3525, Miskolc, Régiposta 9.” (postcode, city, street name and address). How would you query all records related to Miskolc?
+SELECT * FROM table WHERE city = 'Miskolc';
 #### How would you keep track of what kind of data has changed after an UPDATE or DELETE operation in a table?
+I would create a log table and create a trigger on that will insert a row into person_log table whenever the table/s row/s get updated/deletes/added
 
 ### HTML & CSS
 
