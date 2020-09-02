@@ -196,17 +196,45 @@ I would create a log table and create a trigger on that will insert a row into p
 ### HTML & CSS
 
 #### What’s the difference between XML, XHTML and HTML?
+XML --- eXtensible Markup Language XHTML - eXtesnsible Hypertext Markup Language HTML -- Hypertext Markup Language SGML -- Standard Generalized Markup Language
+HTML is SGML based, developed to parse data written in a serialized language (tags are predefined) and display it from the point of user or UI. Media or object can also be a part of the document.
+XML is mostly for parsing data and transfer it between sites or to communicate different applications with each other. Tags are not predefined and strict in closing tags but not in case.
+XHTML is XML based, composing the two other attributes. Parsed as an HTML document but allowing XML specifications.
 #### How to include a JavaScript file in a webpage?
+<script type="javascript" src="javascript.js"></script>
 #### How to include a CSS file in a webpage?
+<link rel="stylesheet" type="css" href="stylesheet.css"/>
 #### How to select an element using its id in CSS?
+With selectors. Selectors can be tag_name {}, .class_name {} and #id_name {}.
 #### How to select elements using their class in CSS?
+.class_name {}
 #### How to select elements which have the ‘alpha’ and ‘beta’ classes in CSS?
+With chaining the class selectors: .alpha.beta {}
 #### How to select all list items in all ordered lists on the page in CSS?
+< ol >: li {}
 #### How to select elements using their attributes in CSS?
+ selector[attribute_name] {}
 #### What are UX and UI?
+User Experience and User Interface.
 #### Please list some points that an application should fulfill to have good UX.
+    • Fulfill the users' needs
+    • Have a clear stucture
+    • Consistency
+    • Understandable
+    • Usability
 #### What is XML, XSLT, DTD?
+    • XML is a markup language, to create XML document in the proper way
+    • XSLT - Extensible Stylesheet Language Transformations is the XML stylesheet formatting language
+    • DTD -- Document Type Definition is for validating the XML document
 #### What is the difference between HTML and XML?
+XML is abbreviation for eXtensible Markup Language whereas HTML stands for Hypertext Markup Language.
+    • XML mainly focuses on transfer of data while HTML is focused on presentation of the data.
+    • XML is content driven‭‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬ whereas HTML is format driven‭‬‬‬‬‬‬‬.
+    • XML is Case sensitive while HTML is Case insensitive.
+    • XML provides namespaces support while HTML doesn't provide namespaces support.
+    • XML is strict for closing tag while HTML is not strict.
+    • XML tags are extensible whereas HTML has limited tags.
+    • XML tags are not predefined whereas HTML has predefined tags.
 
 ### Javascript
 
