@@ -89,7 +89,8 @@ According to the LEGB rule: local, enclosing, global, built-in, the look-up for 
 #### What’s the difference between const and var in JavaScript?
 var is a variable, the value can be modified after all. const is a constant, the value is immutable, can't be reassigned after declaration.
 #### How the list comprehension looks like in Python?
-```List = [a+1 for a in range(5)]
+```
+List = [a+1 for a in range(5)]
 ```
 #### How the “ternary expression” looks like in Python?
 ```
