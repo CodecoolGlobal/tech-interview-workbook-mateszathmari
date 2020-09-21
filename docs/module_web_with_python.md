@@ -5,11 +5,12 @@
 ### Clean code
 
 #### Point out 5 suggestions, how to format an SQL query!
+```
 1: Indent Your Code
 2: Use the WITH Clause instead HAVING
 3: Explain Yourself with Comments
 4: Break Queries into Steps
-5: Stick with One Naming Convention
+5: Stick with One Naming Convention```
 #### What layers can you name in a simple web application?
 View
 Application service
@@ -102,18 +103,16 @@ import name from "module-name";
 #### What is recursion?
 Recursive in functions mean: that the function call itself again .
 #### Write a recursive function which calculates the Fibonacci numbers!
-function fibo(limit, firstNumber, secondNumber) {
-        if (limit === 0) {
-            break;
-        } else {
-		limit -= 1;
-		let nextFiboNum = firstNumber + secondNumber;
-	    	console.log(nextFiboNum);
-	   	firstNumber = secondNumber;
-	    	secondNumber = nextFiboNum;
-		fibo(limit, firstNumber, secondNumber) 
-	    }
+ ```function fibo(limit, a=0, b=1) {
+        if (b >= limit) {
+            return
+        }
+        let c = a + b;
+        console.log(c);
+        return fibo(limit, b, c)
     }
+    
+    fibo(30);```
 #### How to store a function in a variable in Python?
 def my_function():
     print("this is the function")
