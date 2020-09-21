@@ -10,12 +10,13 @@
 2: Use the WITH Clause instead HAVING
 3: Explain Yourself with Comments
 4: Break Queries into Steps
-5: Stick with One Naming Convention```
+5: Stick with One Naming Convention
+```
 #### What layers can you name in a simple web application?
-View
-Application service
-Database
-Domain
+*View
+*Application service
+*Database
+*Domain
 
 ### Error handling
 #### What error can occur, when an array does not have an element on the requested index?
@@ -88,17 +89,25 @@ According to the LEGB rule: local, enclosing, global, built-in, the look-up for 
 #### What’s the difference between const and var in JavaScript?
 var is a variable, the value can be modified after all. const is a constant, the value is immutable, can't be reassigned after declaration.
 #### How the list comprehension looks like in Python?
-List = [a+1 for a in range(5)]
+```List = [a+1 for a in range(5)]
+```
 #### How the “ternary expression” looks like in Python?
+```
 a = 1 if b == 2 else 2
+```
 #### How the ternary expression looks like in JavaScript?
+```
 condition ? exprIfTrue : exprIfFalse
+```
 #### How to import a function from another module in Python?
+```
 from module import module_name 
 calling: module_name.function_name
+```
 #### How to import a function from another module in JavaScript?
+```
 import name from "module-name";
-
+```
 ### Functional
 #### What is recursion?
 Recursive in functions mean: that the function call itself again .
@@ -112,20 +121,25 @@ Recursive in functions mean: that the function call itself again .
         return fibo(limit, b, c)
     }
     
-    fibo(30);```
+    fibo(30);
+  ```
 #### How to store a function in a variable in Python?
+```
 def my_function():
     print("this is the function")
 
 function_variable = my_function
 
 print(function_variable)
+```
 #### List the ways of defining a callable logical unit in JavaScript!
+```
       let obj = {
               myMethod(arg1, arg2) {
                   ...
               }
           };
+```
 #### What is an event listener? How to attach one?
 Event listeners give functionality to the application. Trough them can be triggered a function by the user. Locating the target, attaching a listener function and in the callback handling the event with an event handler function.
     • Locating:
@@ -160,16 +174,18 @@ I need a connection string and a connection object from the database provider to
 DISTINCT is used in the SELECT statement to remove duplicate rows from a result .
 #### What are aggregate functions in SQL? Give 3 examples.
 An aggregate function performs a calculation on a set of values, and returns a single value.
-    • MAX()
-    • SUM()
-    • AVG()
-    • COUNT()
-    • MIN()
+    • *MAX()
+    • *SUM()
+    • *AVG()
+    • *COUNT()
+    • *MIN()
 #### What kind of JOIN types do you know in SQL? Could you give examples?
+```
     • (INNER) JOIN:
         ◦ return the corresponding values if each table have the connection point.
     • LEFT (OUTER) JOIN / RIGHT (OUTER) JOIN:
         ◦ return the corresponding values if one of tables (corresponding) have the connection point.
+```
 #### What are the constraints in sql?
 Constraints are defining what value type can accepted by the column.
 Like : NOT NULL, UNIQUE, PRIMARY KEY.
@@ -181,14 +197,16 @@ To faster reach of a database table values, we can create an index. The index co
 A transaction is a single unit of logic or work.  Database transactions should be done for all or nothing. Using transactions ensures that the database engine can roll back the transaction.
 #### What kind of database relations do you know? How to define them?
 Table connection defined by keys, which are representing the connection between the tables.
-    1. one-to-one
+    1. *one-to-one
         ◦ if one table primary key referenced as the other table foreign key.
-    2. one-to-many
+    2. *one-to-many
         ◦ if one table primary key referenced as more than one other table foreign key.
-    3. many-to-many
+    3. *many-to-many
         ◦ if more than one table key pointing to more than one table keys. For that is needed an intersection table who is controlling the connection between the relations.
 #### You have a table with an “address” field which contains data like “3525, Miskolc, Régiposta 9.” (postcode, city, street name and address). How would you query all records related to Miskolc?
+```
 SELECT * FROM table WHERE city = 'Miskolc';
+```
 #### How would you keep track of what kind of data has changed after an UPDATE or DELETE operation in a table?
 I would create a log table and create a trigger on that will insert a row into person_log table whenever the table/s row/s get updated/deletes/added
 
@@ -200,9 +218,13 @@ HTML is SGML based, developed to parse data written in a serialized language (ta
 XML is mostly for parsing data and transfer it between sites or to communicate different applications with each other. Tags are not predefined and strict in closing tags but not in case.
 XHTML is XML based, composing the two other attributes. Parsed as an HTML document but allowing XML specifications.
 #### How to include a JavaScript file in a webpage?
+```
 <script type="javascript" src="javascript.js"></script>
+```
 #### How to include a CSS file in a webpage?
-link rel="stylesheet" type="css" href="stylesheet.css"/>
+```
+<link rel="stylesheet" type="css" href="stylesheet.css"/>
+```
 #### How to select an element using its id in CSS?
 With selectors. Selectors can be tag_name {}, .class_name {} and #id_name {}.
 #### How to select elements using their class in CSS?
@@ -244,9 +266,9 @@ AJAX programming is that you can exchange data in the background without actuall
 - Comments: (when a commenter hits the comment button, it's nice to see the comment appear immediately on the page.)
 #### What is DOM and how to manipulate it from Javascript?
 DOM - Document Object Model DOM is representative displaying for the according html document, and those objects can modified.
-    • Creating, removing or replacing an element
-    • Modifying an element's text and/or HTML content
-    • Get an element content and work with it
+    • *Creating, removing or replacing an element
+    • *Modifying an element's text and/or HTML content
+    • *Get an element content and work with it
       let element = document.querySelector('selector');
       elemen.syle.backgroundColor = ‘black’;
 #### What are events and how/why to use them in Javascript?
@@ -285,11 +307,11 @@ Different dependencies can safely separated for every project. For example one p
 ### Networks
 
 #### What kind of HTTP status codes do you know?
-• 100–199 - Informational responses
-• 200–299 - Successful responses
-• 300–399 - Redirects
-• 400–499 - Client errors
-• 500–599 - Server errors
+• *100–199 - Informational responses
+• *200–299 - Successful responses
+• *300–399 - Redirects
+• *400–499 - Client errors
+• *500–599 - Server errors
 #### What is a API?
 Application Programming Interface.
     • An API is code, that allows two software programs to communicate with each other. One program can call another programs API to get access to data or functionality of the other program.
@@ -341,26 +363,26 @@ For saving locally data about the user or from the connection types or settings.
 ## Software Development Methodologies
 
 #### What kind of software development methodologies do you know? What are the main features of these?
-• Waterfall - Very simple and easy to understand or to manage. Rigid. Each phase has a review process. requierements -> Desing -> Implementation -> Verification -> Maintanance 
-• Agile - Adaptive approach which is able to respond to the changing requirements of the clients. Direct communication and feedback from customer. Using 1-3 weeks sprints.
-• Scrum - Decision-making is entirely in the hands of the teams, lightly controlled method, frequent updating of the progress, project development steps is visible.
+•* Waterfall - Very simple and easy to understand or to manage. Rigid. Each phase has a review process. requierements -> Desing -> Implementation -> Verification -> Maintanance 
+•* Agile - Adaptive approach which is able to respond to the changing requirements of the clients. Direct communication and feedback from customer. Using 1-3 weeks sprints.
+•*Scrum - Decision-making is entirely in the hands of the teams, lightly controlled method, frequent updating of the progress, project development steps is visible.
  A daily meeting easily helps the developer to make it possible to measure individual productivity.
  This leads to the improvement in the productivity of each of the team members
 #### What are the SCRUM roles?
-• Product owner
-• Scrum master
-• Development team
+• *Product owner
+• *Scrum master
+• *Development team
 #### What are the SCRUM ceremonies?
-• Sprint planning meeting
-• Daily Scrum
-• Sprint review meeting
-• Sprint retrospective meeting
+• *Sprint planning meeting
+• *Daily Scrum
+• *Sprint review meeting
+• *Sprint retrospective meeting
 #### What are the SCRUM artifacts?
-• Product increment
-• Product backlog
-• Sprint backlog
+• *Product increment
+• *Product backlog
+• *Sprint backlog
 #### What is the main goal of a retrospective meeting?
 To get better understanding about how the work went during the last sprint, and through this find better ways to meet the project's goals.
 #### Explain, when would you recommend to use the waterfall methodology?
-• Requirements are very well known, clear and fixed.
-• Product definition is stable.
+• *Requirements are very well known, clear and fixed.
+• *Product definition is stable.
